@@ -3,7 +3,9 @@ class Dog
   @@all = []
 
   def self.all
-    @@all
+    @@all.each do |dog|
+      puts dog.name
+    end
   end
 
   def initialize (name)

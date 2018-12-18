@@ -8,6 +8,10 @@ class Dog
     end
   end
 
+  def self.clear_all
+    @@all.clear
+  end
+
   def initialize (name)
     @name = name
     @@all.push(self)
